@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ArduinoTrainControl2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="ArduinoTrainControl2" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D__AVR_ATmega2560__" />
+					<Add option="-D_VMDEBUG=1" />
+					<Add option="-DARDUINO=105" />
+					<Add option="-DARDUINO_MAIN" />
+					<Add option="-D__AVR__" />
+					<Add option="-DF_CPU=16000000L" />
+					<Add option="-D__cplusplus" />
+					<Add directory="H:/arduinoIDE/hardware/arduino/cores/arduino" />
+					<Add directory="H:/arduinoIDE/hardware/arduino/variants/mega" />
+					<Add directory="H:/Arduino/libraries/Streaming" />
+					<Add directory="H:/Arduino/libraries/Streaming/utility" />
+					<Add directory="H:/Arduino/libraries/Button" />
+					<Add directory="H:/Arduino/libraries/Button/utility" />
+					<Add directory="H:/Arduino/libraries/PinChangeInt" />
+					<Add directory="H:/Arduino/libraries/PinChangeInt/utility" />
+					<Add directory="H:/Arduino/libraries/PString" />
+					<Add directory="H:/Arduino/libraries/PString/utility" />
+					<Add directory="H:/arduinoIDE/libraries/Timer" />
+					<Add directory="H:/arduinoIDE/libraries/Timer/utility" />
+					<Add directory="H:/arduinoIDE/libraries/Metro" />
+					<Add directory="H:/arduinoIDE/libraries/Metro/utility" />
+					<Add directory="H:/Arduino/libraries/QueueArray" />
+					<Add directory="H:/Arduino/libraries/QueueArray/utility" />
+					<Add directory="h:/arduinoide/hardware/tools/avr/avr/include/" />
+					<Add directory="h:/arduinoide/hardware/tools/avr/avr/include/avr/" />
+					<Add directory="h:/arduinoide/hardware/tools/avr/avr/" />
+					<Add directory="h:/arduinoide/hardware/tools/avr/lib/gcc/avr/4.3.2/include/" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="ArduinoTrainControl2" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Unit filename="ArduinoTrainControl2.ino" />
+		<Unit filename="OutDel.cpp" />
+		<Unit filename="OutDel.h" />
+		<Unit filename="Turnout.cpp" />
+		<Unit filename="Turnout.h" />
+		<Unit filename="Visual Micro/.ArduinoTrainControl2.vsarduino.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

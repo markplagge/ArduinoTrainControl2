@@ -1,0 +1,54 @@
+<VisualMicro>
+  <Program Name="ArduinoTrainControl2" Ext=".ino" Location="H:\Arduino\ArduinoTrainControl2">
+    <Compile IsCompiled="0" ConfigurationName="Debug" StopOnError="False" OptimiseCore="True" OptimiseLibs="False" BuildPath="C:\Users\Mark\AppData\Local\VMicro\Arduino\Builds\ArduinoTrainControl2\mega2560" IsDebugStart="1" IncludesDebug="0" SketchName="ArduinoTrainControl2" ProjectMacrosHaveChanged="1" McuMacrosHaveChanged="1" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 80;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE_UART 5;VM_DEBUGGER_TYPE_USART 6;VM_DEBUGGER_TYPE_USBSERIAL 7;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_HARDWARESERIAL;" CompilerErrors="1" />
+    <Platform Package="arduino" Platform="avr" Architecture="avr" Name="arduino10x">
+      <Board Name="mega2560" Description="Arduino Mega 2560 or Mega ADK" CoreFolder="H:\arduinoIDE\hardware\arduino\cores\arduino" VariantFullPath="H:\arduinoIDE\hardware\arduino\variants\mega" McuIdePath="H:\arduinoIDE" McuSketchBookPath="H:\Arduino" name="Arduino Mega 2560 or Mega ADK" upload.protocol="wiring" upload.maximum_size="258048" upload.speed="115200" bootloader.low_fuses="0xFF" bootloader.high_fuses="0xD8" bootloader.extended_fuses="0xFD" bootloader.path="stk500v2" bootloader.file="stk500boot_v2_mega2560.hex" bootloader.unlock_bits="0x3F" bootloader.lock_bits="0x0F" build.mcu="atmega2560" build.f_cpu="16000000L" build.core="arduino" build.variant="mega" runtime.ide.path="H:\arduinoIDE" build.system.path="H:\arduinoIDE\hardware\arduino\system" runtime.ide.version="105" originalid="mega2560" build.core.vmresolved="H:\arduinoIDE\hardware\arduino\cores\arduino" build.core.parentfolder.vmresolved="H:\arduinoIDE\hardware\arduino\cores" build.core.coresparentfolder.vmresolved="H:\arduinoIDE\hardware\arduino" vm.core.include="arduino.h" vm.boardsource.path="H:\arduinoIDE\hardware\arduino" vm.platformname.name="avr" build.arch="AVR" ide.hint="Arduino 0023 and 1.0.x Ide" ide.location.key="Arduino" ide.location.ide.winreg="Arduino 1.0.x Application" ide.location.sketchbook.winreg="Arduino 1.0.x Sketchbook" ide.location.sketchbook.preferences="sketchbook.path" ide.location.sketchbook.default="%MYDOCUMENTS%\arduino" ide.location.preferences="%VM_APPDATA_ROAMING%\arduino\preferences.txt" ide.default.package="arduino" ide.default.platform="avr" ide.multiplatform="true" ide.includes="arduino.h" ide.platformswithoutpackage="true" ide.sketchfolder.platforms.exclude="avr" ide.includes.fallback="wprogram.h" ide.extension="ino" ide.extension.fallback="pde" ide.versionLTEQ="149" ide.exe="arduino.exe" ide.hosts="atmel" ide.url="http://arduino.cc/en/Main/Software" vm.debug="true" software="ARDUINO" ide.appid="arduino10x" location.sketchbook="H:\Arduino" build.variant.vmresolved="H:\arduinoIDE\hardware\arduino\variants\mega" />
+    </Platform>
+    <Debug DebugEnabled="1" DebugMode="Full" IncludeDisabledBreakpoints="1" JumpToSource="1" LocalPort="COM4" LocalPortSpeed="115200" RemotePortSpeed="115200" RemotePortTransport="HardwareSerial" RemotePort="Serial" />
+    <VCCodeModel>
+      <VCCodeMacros />
+    </VCCodeModel>
+    <BreakPoints>
+      <BreakPoint Index="1" Name="ArduinoTrainControl2.ino, line 705" Id="003d187d-5ace-4cfd-ba81-e95d83d53978" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="h:\arduino\arduinotraincontrol2\arduinotraincontrol2.ino" FileLine="705" FileColumn="1" FunctionName="readSensCaller()" FunctionLineOffset="32" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='003d187d-5ace-4cfd-ba81-e95d83d53978'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>698	    sensorBtns[cSens - 1]-&gt;clearPressCount();
+699	    shm += sens1;
+700	    shm += "}\n";
+701	
+702	  }
+703	  if(sensHit)
+704	  {
+--&gt;705	    outStrings.push(shm);
+706	  }
+707	  cSens = cSens % 16;
+708	}
+709	//polls the sensors, and if they have turned low, queues a message to send to the receiver. NOTE: This currently does not support *S{X,X} format, only one sensor at a time will be reported.
+710	void readSensors()
+711	{
+712	  bool detectedSensor = false;
+713	  int sensorHits[] = {
+714	    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0  };
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="2" Name="ArduinoTrainControl2.ino, line 263" Id="66617716-c59d-4929-b55f-2d1959d3c8e8" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="h:\arduino\arduinotraincontrol2\arduinotraincontrol2.ino" FileLine="263" FileColumn="1" FunctionName="" FunctionLineOffset="1" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='66617716-c59d-4929-b55f-2d1959d3c8e8'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>256	 //		Serial2.readBytesUntil('\n',turnSerChar,6);
+257	 //		if(checkTurnCMD())
+258	 //		{
+259	 //			turnoutCMDReady = true;
+260	 //		}
+261	 //		else
+262	 //		{
+--&gt;263	 //			queueErrorMessage();
+264	 //		}
+265	 //	}
+266	 //}
+267	 //*********************************************************************************New code:****************************************
+268	 //This is debug code to test the system out on a PC:*/
+269	char demoBuffer1[8];
+270	char demoBuffer2[6];
+271	
+272	//Serial Port 0 is a debug serial port, shared with the USB. We do not use it normally, so it has a special command system:
+</Source>
+      </BreakPoint>
+    </BreakPoints>
+  </Program>
+</VisualMicro>
